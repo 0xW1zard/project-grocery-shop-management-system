@@ -14,7 +14,7 @@ This is a **3-tier web application** for managing a grocery store, built using *
 
 ## 📸 Screenshot
 
-![Homepage](homepage.JPG)
+![Homepage](homepage.jpg)
 
 ---
 
