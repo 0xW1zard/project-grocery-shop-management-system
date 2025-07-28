@@ -1,5 +1,3 @@
-# grocery-store-webapp
-A 3-tier grocery store management app using using *Python, Flask, MySQL*, and *HTML/CSS/JS/Bootstrap*.
 # 🛒 Grocery Store Web Application
 
 This is a **3-tier web application** for managing a grocery store, built using **Python, Flask, MySQL**, and **HTML/CSS/JS/Bootstrap**.
