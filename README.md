@@ -23,7 +23,6 @@ This is a **3-tier web application** for managing a grocery store, built using *
 - Add, update, and delete grocery items
 - Inventory management with real-time database
 - Responsive web interface
-- Search and filter groceries
 - Clean design using Bootstrap
 
 ---
