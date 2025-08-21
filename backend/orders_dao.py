@@ -43,6 +43,20 @@ def get_all_orders(connection):
 
     return response
 
+def delete_order(connection, order_id):
+    cursor = connection.cursor()
+    
+    # First delete order details (due to foreign key constraint)
+    order_details_query = ("DELETE FROM order_details WHERE order_id = %s")
+    cursor.execute(order_details_query, (order_id,))
+    
+    # Then delete the order
+    order_query = ("DELETE FROM orders WHERE order_id = %s")
+    cursor.execute(order_query, (order_id,))
+    
+    connection.commit()
+    return order_id
+
 if __name__ == '__main__':
     connection = get_sql_connection()
 

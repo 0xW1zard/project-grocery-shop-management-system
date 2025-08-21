@@ -37,9 +37,10 @@ def insert_new_product(connection, product):
 
 def delete_product(connection, product_id):
     cursor = connection.cursor()
-    query = ("DELETE FROM products where product_id = " + str(product_id))
-    cursor.execute(query)
+    query = ("DELETE FROM products WHERE product_id = %s")
+    cursor.execute(query, (product_id,))
     connection.commit()
+    return product_id
 
 if __name__ == '__main__':
     connection= get_sql_connection()
